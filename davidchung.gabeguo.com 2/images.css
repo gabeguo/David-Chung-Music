@@ -1,0 +1,159 @@
+/*
+Courtesy of:
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgba(200, 200, 200, 1.0);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  width: 100%;
+  height: 70%;
+  position: relative;
+  margin: auto;
+  background: black;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -3.5vh;
+  padding: 1.5vmax;
+  color: white;
+  font-weight: bold;
+  font-size: 5vmax;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(200, 200, 200,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2.5vmax;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 2.5vmax;
+  padding: 2vmax;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 2.5vmax;
+  width: 2.5vmax;
+  margin: 0.5vmax;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+/*
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+*/
+
+img {
+    /*
+    height: 100%;
+    width: auto;
+    */
+    /*My code*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    max-height: 100%;
+    /*My code ends here*/
+    text-align: center;
+    display: block;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+
+#home_button {
+    position: absolute;
+    top: 1.1vmax;
+    left: 1.1vmax;
+    font-size: 6vmax;
+}
+#header {
+    font-size: 6vmax;
+    padding: 2.0vmax;
+    text-align: center;
+}
+#home_button:hover {
+    color: white;
+    cursor: pointer;
+}
+#home_button, #home_button:hover {
+    transition: 0.6s ease;
+}
+a {
+    color: black;
+}

@@ -1,0 +1,131 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: black;
+}
+#top {
+    height: 100vh;
+    background: url('img/handsonface.jpg');
+    background-size: auto 100%;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#titleLabel {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ms-transform: ms-translate(-50%, -50%);
+    font-size: 8vmax;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.menuItem {
+    float: left;
+    width: 7vmax;
+    padding: 1vmax;
+    margin: 0;
+    transition: all ease-in-out 0.5s;
+    text-align: center;
+}
+.menuItem img {
+    width: 100%;
+}
+.menuItem:hover {
+    padding: 2vmax;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    background: rgba(10, 10, 10, 0.7);
+}
+.menuItem .icon {
+    font-size: 5.3vmax;
+}
+#contact {
+    font-size: 2.5vmax;
+    padding: 5% 5% 14vmax;
+    color: white;
+    background: black;
+}
+
+/* Borrowed from https://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+/* Dropdown Button */
+.dropbtn {
+  /*background-color: #3498DB;*/
+  background: radial-gradient(#4CAF50, #4CD050);
+  border-radius: 1vmax;
+  color: white;
+  padding: 1.5vmax;
+  font-size: 2.5vmax;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background: radial-gradient(#4CB050, #4CF050);
+  color: yellow;
+}
+
+.dropbtn, .dropbtn:hover, .dropbtn:focus {
+    transition: all 0.5s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+  display: inline-block;
+  z-index: 2;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20vmax;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  font-size: 1.7vmax;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 1vmax;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a, .dropdown-content a:hover {
+    transition: all 0.5s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown-content img {
+    margin-top: 1vmax;
+    height: 5vmax;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* End borrowed code */
